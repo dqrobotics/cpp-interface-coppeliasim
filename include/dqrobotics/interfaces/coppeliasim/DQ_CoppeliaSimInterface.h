@@ -38,10 +38,9 @@ protected:
 public:
     virtual ~DQ_CoppeliaSimInterface() = default;
     virtual bool connect(const std::string& host, const int& port, const int&TIMEOUT_IN_MILISECONDS) = 0;
-    virtual void set_stepping_mode(const bool& flag) = 0;
-    virtual void trigger_next_simulation_step() = 0;
-    virtual void start_simulation() = 0;
-    virtual void stop_simulation()  = 0;
+    virtual void trigger_next_simulation_step() const = 0;
+    virtual void start_simulation() const = 0;
+    virtual void stop_simulation()  const = 0;
 
     virtual int get_object_handle(const std::string& objectname) = 0;
     virtual std::vector<int> get_object_handles(const std::vector<std::string>& objectnames) = 0;
