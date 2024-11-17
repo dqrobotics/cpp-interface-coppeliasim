@@ -25,7 +25,8 @@ Contributors:
 */
 
 #include <dqrobotics/DQ.h>
-#include<string>
+#include <string>
+#include <vector>
 
 using namespace Eigen;
 
