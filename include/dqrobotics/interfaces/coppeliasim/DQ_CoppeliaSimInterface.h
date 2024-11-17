@@ -34,9 +34,12 @@ namespace DQ_robotics
 {
 class DQ_CoppeliaSimInterface
 {
-protected:
-    DQ_CoppeliaSimInterface() = default;
 public:
+    enum class REFERENCE
+    {
+        BODY_FRAME,
+        ABSOLUTE_FRAME
+    };
     virtual ~DQ_CoppeliaSimInterface() = default;
     virtual bool connect(const std::string& host, const int& port, const int&TIMEOUT_IN_MILISECONDS) = 0;
     virtual void trigger_next_simulation_step() const = 0;
@@ -66,6 +69,8 @@ public:
     virtual void     set_joint_torques(const std::vector<std::string>& jointnames, const VectorXd& torques) = 0;
     virtual VectorXd get_joint_torques(const std::vector<std::string>& jointnames) = 0;
 
+protected:
+    DQ_CoppeliaSimInterface() = default;
 };
 
 }
