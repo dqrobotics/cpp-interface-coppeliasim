@@ -23,7 +23,7 @@ Contributors:
    1. Juan Jose Quiroz Omana (juanjose.quirozomana@manchester.ac.uk)
         - Responsible for the original implementation.
 */
-
+#pragma once
 #include <dqrobotics/DQ.h>
 #include <string>
 #include <vector>
@@ -35,11 +35,6 @@ namespace DQ_robotics
 class DQ_CoppeliaSimInterface
 {
 public:
-    enum class REFERENCE
-    {
-        BODY_FRAME,
-        ABSOLUTE_FRAME
-    };
     virtual ~DQ_CoppeliaSimInterface() = default;
     virtual bool connect(const std::string& host, const int& port, const int&TIMEOUT_IN_MILISECONDS) = 0;
     virtual void trigger_next_simulation_step() const = 0;
