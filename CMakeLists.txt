@@ -1,5 +1,5 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
-PROJECT(dqrobotics-interface-coppeliasim)
+PROJECT(cpp-interface-coppeliasim)
 set (CMAKE_CXX_STANDARD 11)
 
 ################################################################
