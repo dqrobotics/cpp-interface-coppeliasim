@@ -1,0 +1,12 @@
+Source: libdqrobotics-interface-coppeliasim
+Section: devel
+Priority: optional
+Maintainer: Murilo Marinho <murilomarinho@ieee.org>
+Build-Depends: cmake
+Homepage: https://dqrobotics.github.io/
+
+Package: libdqrobotics-interface-coppeliasim
+Architecture: any
+Depends: libdqrobotics
+Description: DQ Robotics interface with CoppeliaSim.
+ Only the abstract classes are available in this package. See other packages for concrete implementations.

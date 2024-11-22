@@ -1,0 +1,5 @@
+libdqrobotics-interface-coppeliasim (24.10.0) UNRELEASED; urgency=medium
+
+  * Initial release of 24.10.0 
+
+ -- Murilo <murilo@ubuntu>  Tue, 01 Oct 2019 20:43:16 -0700
