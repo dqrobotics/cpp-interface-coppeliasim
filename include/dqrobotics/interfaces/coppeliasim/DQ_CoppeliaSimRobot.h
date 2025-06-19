@@ -25,6 +25,7 @@ Contributors:
 */
 #pragma once
 #include <dqrobotics/DQ.h>
+#include <dqrobotics/interfaces/coppeliasim/DQ_CoppeliaSimInterface.h>
 #include <string>
 #include <memory>
 
