@@ -38,10 +38,10 @@ public:
     virtual ~DQ_CoppeliaSimRobot() = default;
     virtual void set_configuration(const VectorXd& configuration) = 0;
     virtual void set_target_configuration(const VectorXd& target_configuration) = 0;
-    virtual  VectorXd get_configuration() = 0;
     virtual void set_target_configuration_velocities(const VectorXd& target_configuration_velocities) = 0; 
-    virtual  VectorXd get_configuration_velocities() = 0;
     virtual void set_target_configuration_forces(const VectorXd& target_configuration_forces) = 0; 
+    virtual  VectorXd get_configuration() = 0;
+    virtual  VectorXd get_configuration_velocities() = 0;
     virtual  VectorXd get_configuration_forces() = 0;
 protected:
     DQ_CoppeliaSimRobot() = default;
