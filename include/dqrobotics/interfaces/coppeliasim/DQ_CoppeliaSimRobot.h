@@ -45,6 +45,8 @@ public:
     virtual  VectorXd get_configuration_forces() = 0;
 protected:
     DQ_CoppeliaSimRobot() = default;
+    std::string robot_name_;
+    std::shared_ptr<DQ_CoppeliaSimInterface> coppeliasim_interface_;
 };
 
 }
