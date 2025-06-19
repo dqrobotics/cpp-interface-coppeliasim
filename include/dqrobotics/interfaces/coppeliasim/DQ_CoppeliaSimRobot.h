@@ -26,7 +26,7 @@ Contributors:
 #pragma once
 #include <dqrobotics/DQ.h>
 #include <string>
-#include <vector>
+#include <memory>
 
 using namespace Eigen;
 
