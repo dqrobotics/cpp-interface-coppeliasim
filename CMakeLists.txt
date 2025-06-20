@@ -8,4 +8,5 @@ set (CMAKE_CXX_STANDARD 11)
 
 INSTALL(FILES
     include/dqrobotics/interfaces/coppeliasim/DQ_CoppeliaSimInterface.h
+    include/dqrobotics/interfaces/coppeliasim/DQ_CoppeliaSimRobot.h
     DESTINATION "include/dqrobotics/interfaces/coppeliasim") 
