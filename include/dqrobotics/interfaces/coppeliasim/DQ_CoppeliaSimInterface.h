@@ -61,8 +61,8 @@ public:
     virtual VectorXd get_joint_velocities(const std::vector<std::string>& jointnames) = 0;
     virtual void     set_joint_target_velocities(const std::vector<std::string>& jointnames, const VectorXd& joint_target_velocities) = 0;
 
-    virtual void     set_joint_torques(const std::vector<std::string>& jointnames, const VectorXd& torques) = 0;
-    virtual VectorXd get_joint_torques(const std::vector<std::string>& jointnames) = 0;
+    virtual void     set_joint_target_forces(const std::vector<std::string>& jointnames, const VectorXd& forces) = 0;
+    virtual VectorXd get_joint_forces(const std::vector<std::string>& jointnames) = 0;
 
 protected:
     DQ_CoppeliaSimInterface() = default;
